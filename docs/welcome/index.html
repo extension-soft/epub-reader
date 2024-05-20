@@ -7,12 +7,12 @@
 
     <body>
         <div class="container">
-            <h1>Epub Reader has been installed 🎉</h1>
+            <h1>Epub Reader has been installed </h1>
 
-            <h2>1. Pin the EPUB Reader extension for easy access: </h2>
+            <h2>1. <span class="pin-text" style="color:#f15454">Pin</span> the Epub Reader extension for easy access: </h2>
             <img src="EpubReader/instruction1.png">
 
-            <h2>2. Click on the extension icon and open the EPUB file: </h2>
+            <h2>2.  Click on the extension icon and open the Epub file: </h2>
             <img src="EpubReader/instruction2.png">
 
             <div class="tip">
@@ -30,8 +30,9 @@
         <script>
             const images = document.querySelectorAll("img");
             const tip = document.querySelector(".tip");
+            const pinText = document.querySelector(".pin-text");
 
-            for (const image of images) {
+            for (const image of [pinText,...images]) {
                 image.addEventListener("click", () => {
                     tip.setAttribute("class", "tip tip--visible");
                     setTimeout(() => tip.setAttribute("class", "tip"), 5000);
