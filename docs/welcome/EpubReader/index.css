@@ -41,6 +41,7 @@ img {
 
 .tip {
     display: none;
+    fill: #f15454;
     position: fixed;
     top: 20px;
     right: 120px;
